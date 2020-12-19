@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is My Learning Web Site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            background-color: orange;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid black;
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        @media (min-width: 600px) {
+            body{
+                background-color: red;
+            }
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #foo{
+            font-size: 200px;
+        }
+
+        button{
+            background-color: green;
+        }
+        button:hover {
+            background-color: red;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #container > div {
+            background-color: purple;
+            margin: 20px;
+        }
+
+        #grid {
+            background-color: khaki;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello,World.
+    </div>
+
+    <h1 id="foo"> My Name is sxg.</h1>
+    <table>
+        <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>ainimao</td>
+        </tr>
+        <tr>
+            <td>bob</td>
+            <td>13</td>
+            <td>dog</td>
+        </tr>
+    </table>
+    <ol>
+        <li>紧急</li>
+        <li>不紧急</li>
+        <ul>
+            <li>tip1: eat</li>
+            <li>tip2: sleep</li>
+        </ul>
+    </ol>
+    <h2><a href="https://www.baidu.com" style="color: blue">点击前往百度</a></h2>
+    <button> chick me </button>
+
+    <div id="container">
+        <div>0 Look</div>
+        <div>1 Look</div>
+        <div>2 Look</div>
+        <div>3 Look</div>
+        <div>4 Look</div>
+        <div>5 Look</div>
+        <div>6 Look</div>
+        <div>7 Look</div>
+        <div>8 Look</div>
+        <div>9 Look</div>
+        <div>10 Look</div>
+        <div>11 Look</div>
+    </div>
+
+    <div id="grid">
+        <div class="grid-item"> 1 </div>
+        <div class="grid-item"> 2 </div>
+        <div class="grid-item"> 3 </div>
+        <div class="grid-item"> 4 </div>
+        <div class="grid-item"> 5 </div>
+        <div class="grid-item"> 6 </div>
+        <div class="grid-item"> 7 </div>
+        <div class="grid-item"> 8 </div>
+        <div class="grid-item"> 9 </div>
+        <div class="grid-item"> 10 </div>
+        <div class="grid-item"> 11 </div>
+        <div class="grid-item"> 12 </div>
+    </div>
+
+</body>
+</html>
