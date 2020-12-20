@@ -1,0 +1,30 @@
+# 首次克隆代码
+git clone <url>
+# 提交到暂存区
+git add <filename>
+# 保存快照
+git commit -m "Edit description"
+git commit -am "Edit description"
+# 提交代码
+git push
+git push origin <branch name>
+# 强制推送代码
+git push -f origin <branch name>
+# 拉取最新代码
+git pull
+# 检查代码状态
+git status
+# 开启新分支
+git checkout -b <new branch name>
+# 切换分支
+git checkout <branch name>
+# 合并分支(首先到主分支)
+git merge <wait branch name>
+# git日志(检查hash提交值用来回滚)
+git log
+# 回滚代码
+git reset --hard <hash>
+# 删除远程分支
+git push origin --delete test
+git push origin :test
+
